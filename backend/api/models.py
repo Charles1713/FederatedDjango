@@ -32,7 +32,7 @@ class Device(models.Model):
 
     #outputted to other edge if not Blank
     model_output_dest = models.ForeignKey("self", blank=True, on_delete=models.PROTECT) #No cascade on delete, just raises and error, blank = True lets us not give a value which means sends to server
-    user_id = models.ForeignKey(User, on_delete=models.CASCADE) #If a user is removed it should be deleted
+    user = models.ForeignKey(User, on_delete=models.CASCADE) #If a user is removed it should be deleted
     ip = models.GenericIPAddressField()
     device_name = models.TextField(max_length=30, default="Unknown Device")
     #data_server = models.ForeignKey(Data_Storage, blank=True, on_delete=models.PROTECT) #FIXME ADDBACK

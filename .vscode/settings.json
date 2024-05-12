@@ -1,6 +1,7 @@
 {
     "cSpell.words": [
-        "dotenv"
+        "dotenv",
+        "nonrepudiation"
     ],
     "python.analysis.typeCheckingMode": "basic",
     "python.analysis.autoImportCompletions": true

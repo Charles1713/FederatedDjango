@@ -32,7 +32,7 @@ class DeviceSerializer(serializers.ModelSerializer):
                         "ip": {"read_only": True}, 
                         "can_be_used": {"read_only": True}, 
                         "model_output_dest": {"read_only": True}, 
-                        "user_id": {"read_only": True}, 
+                        "user": {"read_only": True}, 
                         "ip": {"read_only": True}, 
                         "device_name": {"read_only": True}, 
                         "data_server": {"read_only": True}, 
