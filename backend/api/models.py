@@ -45,6 +45,8 @@ class Device(models.Model):
     edge_ram_gb = models.FloatField(blank=True)
     edge_storage_gb = models.FloatField(blank=True)
     # As soon as device is registered a device log should be sent to update 
+    #FIXME OS and cpu type and mac address to ensure ip is correct
+    #FIXME is online
 
     def __str__(self) -> str:
         return self.device_name

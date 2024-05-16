@@ -8,13 +8,13 @@ from rest_framework import routers
 
 #FIXME might prune what specific routes do rather than let everything happen? Depends on Query Set and nonrepudiation to remove patch
 router = routers.DefaultRouter()
-router.register('device/',DeviceViewSet)
-router.register('device_chain/',Device_ChainViewSet)
-router.register('model/',ModelViewSet)
-router.register('log/',LogViewSet)
-router.register('run/',RunViewSet)
-router.register('run_history/',Run_HistoryViewSet)
+router.register('device',DeviceViewSet)
+router.register('device_chain',Device_ChainViewSet)
+router.register('model',ModelViewSet)
+router.register('log',LogViewSet)
+router.register('run',RunViewSet)
+router.register('run_history',Run_HistoryViewSet)
 
 urlpatterns = [
-    path("",include(router.urls))
+    path("",include(router.urls)),
 ]

@@ -1,0 +1,13 @@
+C:/Users/Charl/OneDrive/Desktop/FederatedDjango/build/CMakeFiles/INSTALL.dir
+C:/Users/Charl/OneDrive/Desktop/FederatedDjango/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Charl/OneDrive/Desktop/FederatedDjango/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/Charl/OneDrive/Desktop/FederatedDjango/build/flutter/CMakeFiles/flutter_wrapper_plugin.dir
+C:/Users/Charl/OneDrive/Desktop/FederatedDjango/build/flutter/CMakeFiles/flutter_wrapper_app.dir
+C:/Users/Charl/OneDrive/Desktop/FederatedDjango/build/flutter/CMakeFiles/flutter_assemble.dir
+C:/Users/Charl/OneDrive/Desktop/FederatedDjango/build/flutter/CMakeFiles/INSTALL.dir
+C:/Users/Charl/OneDrive/Desktop/FederatedDjango/build/runner/CMakeFiles/frontend.dir
+C:/Users/Charl/OneDrive/Desktop/FederatedDjango/build/runner/CMakeFiles/INSTALL.dir
+C:/Users/Charl/OneDrive/Desktop/FederatedDjango/build/runner/CMakeFiles/ALL_BUILD.dir
+C:/Users/Charl/OneDrive/Desktop/FederatedDjango/build/plugins/flutter_secure_storage_windows/CMakeFiles/flutter_secure_storage_windows_plugin.dir
+C:/Users/Charl/OneDrive/Desktop/FederatedDjango/build/plugins/flutter_secure_storage_windows/CMakeFiles/INSTALL.dir
+C:/Users/Charl/OneDrive/Desktop/FederatedDjango/build/plugins/flutter_secure_storage_windows/CMakeFiles/ALL_BUILD.dir

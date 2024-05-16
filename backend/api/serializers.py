@@ -43,6 +43,7 @@ class DeviceSerializer(serializers.ModelSerializer):
 
 class Device_ChainSerializer(serializers.ModelSerializer):
     class Meta:
+        model = Device_Chain   
         fields = ["created_at", "current_model", "next_model"]
         extra_kwargs = {
             "current_device":{"read_only": True},
@@ -51,11 +52,13 @@ class Device_ChainSerializer(serializers.ModelSerializer):
 
 class ModelSerializer(serializers.ModelSerializer):
     class Meta:
+        model = Model
         fields = ["model_name", "model_path"] #might remove model path, user should not be able to change that or this is just for admin level
 
 
 class LogSerializer(serializers.ModelSerializer):
     class Meta: #FIXME what to do about file uploads
+        model = Log
         fields = ["device_end", "error_file", "device_log_file", "model_log_file", "initial_model_id", "run", "model_upload"]
         extra_kwargs = {
             "device_end": {"read_only": True}, #Should always be the device that calls this so search by ip?
@@ -63,10 +66,12 @@ class LogSerializer(serializers.ModelSerializer):
 
 class RunSerializer(serializers.ModelSerializer):
     class Meta:
+        model = Run
         fields = ["start_time","end_time"] #Update at end of RUN FIXME
 
 class Run_HistorySerializer(serializers.ModelSerializer): #Might remove this serializer, should be backend only 
     class Meta:
+        model = Run_History
         fields = ["run_number","device_id"]
 
         

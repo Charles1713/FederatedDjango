@@ -20,7 +20,7 @@ load_dotenv("../.env")
 def get_from_env(value:str, evaluate = False, path= "../.env"):
     load_dotenv(path)
     if evaluate:
-        return eval(os.getenv(value))
+        return eval(str(os.getenv(value))) #FIXME runtime error with eval, was recently updated, try again
     return os.getenv(value)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -49,11 +49,14 @@ REST_FRAMEWORK = {
     ],
 }
 
-SIMPLE_JWT = {
+# SIMPLE_JWT = {
+#     "ACCESS_TOKEN_LIFETIME": timedelta(seconds=1),
+#     "REFRESH_TOKEN_LIFETIME": timedelta(seconds=2),
+# }
+SIMPLE_JWT={
     "ACCESS_TOKEN_LIFETIME": timedelta(minutes=30),
     "REFRESH_TOKEN_LIFETIME": timedelta(days=1),
 }
-
 # SIMPLE_JWT = {
 #     "ACCESS_TOKEN_LIFETIME": get_from_env("ACCESS_TOKEN_LIFETIME"),
 #     "REFRESH_TOKEN_LIFETIME": get_from_env("REFRESH_TOKEN_LIFETIME"),
@@ -71,6 +74,7 @@ INSTALLED_APPS = [
     "api",
     "rest_framework",
     "corsheaders",
+    
 ]
 
 MIDDLEWARE = [

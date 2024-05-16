@@ -94,7 +94,7 @@ class LogViewSet(viewsets.ModelViewSet):
 class RunViewSet(viewsets.ModelViewSet):
     queryset = Run.objects.all()
     serializer_class = RunSerializer
-    permission_classes = [IsAdminUser]
+    permission_classes = [IsAuthenticated] #change back to [IsAdminUser]
 
 
 class Run_HistoryViewSet(viewsets.ModelViewSet):
