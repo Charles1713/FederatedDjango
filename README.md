@@ -1,1 +1,1 @@
-This is an unfinished web app that is supposed to set up and monitor federated learning systems in real time. At this current moment the project is suspended. The project is written with Django and Flutter.
+This is an unfinished web app that is supposed to set up and monitor federated learning systems in real-time. At this current moment, the project is suspended. The project was written with Django and Flutter. The design docs are not included yet.
